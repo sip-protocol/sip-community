@@ -26,6 +26,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.pnpm-debug.log*
 
 # Testing
 coverage/
@@ -45,3 +46,7 @@ Thumbs.db
 # Misc
 .turbo/
 .cache/
+
+# Agent tooling (local task-runner state, not part of the app)
+.superpowers/
+.remember/
