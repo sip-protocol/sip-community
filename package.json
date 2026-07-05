@@ -46,7 +46,6 @@
     "prettier": "^3.9.4",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.9"
   }
 }

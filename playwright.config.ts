@@ -1,13 +1,15 @@
 import { defineConfig } from '@playwright/test'
 
+const baseURL = 'http://localhost:3000'
+
 export default defineConfig({
   testDir: './e2e',
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL,
   },
   webServer: {
     command: 'pnpm dev',
-    url: 'http://localhost:3000',
+    url: baseURL,
     reuseExistingServer: !process.env.CI,
   },
 })
