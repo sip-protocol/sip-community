@@ -1,0 +1,12 @@
+/*
+ * `html:root` (not `:root`) is deliberate: `@import` is hoisted above the
+ * neutral `:root`/`.light` blocks in globals.css by CSS syntax rules, so a
+ * plain `:root` here would lose the cascade on source order alone. The
+ * redundant type selector adds one specificity point to reliably win over
+ * both `:root` and `.light` without `!important`.
+ */
+html:root {
+  --primary: oklch(54.1% 0.281 293.009);
+  --primary-foreground: oklch(0.985 0 0);
+  --ring: oklch(60.6% 0.25 292.717);
+}
